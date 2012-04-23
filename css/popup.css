@@ -1,0 +1,82 @@
+/* 
+    Document   : popup.css
+    Created on : 14.04.2012, 15:27:23
+    Author     : Alex
+    Description:
+        this stylesheet is for the popup windows
+*/
+
+root { 
+    display: block;
+}
+
+body{
+    font-family: Verdana,Arial,sans-serif;
+    background-color: darkslategrey;
+    min-width: 1000px;
+}
+
+.popup-room{
+    width:1000px;
+    border: 5px solid darkgray;
+    position:absolute;
+    top:20px;
+    background:#ffffff;
+    left:50%;
+    margin-left:-400px;
+}
+fieldset{
+    -webkit-border-top-left-radius: 30px;
+    -webkit-border-top-right-radius: 30px;
+    /*border-radius: 5px 10px 15px 20px; /* TL TR BR BL*/
+    border-top-left-radius: 5px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 20px;
+    
+    border-style: solid;
+    border-width: 1px 3px 5px 7px; /* T R B L*/
+    border-color: darkgoldenrod;
+    width: 800px;
+    position: relative;
+    display: inline;
+}
+div.checkbox{
+    display: block;
+    float: left;
+    width: 8em;
+    height: 1em;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+div.checkbox4user{
+    padding: 10px;
+    font-size: 0.8em;
+}
+div.checkbox label{
+    font-size: 14px;
+    alignment-adjust: middle;
+}
+legend{
+    text-transform: lowercase;
+    color:#999999;
+    font-size: 0.8em;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.button_popup{
+    float: right;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+button{
+    width: 80px;
+}
+
+input:disabled + span:after {content: " nicht auswählbar"}
+input:enabled + span:after {content: " auswählbar"}
+input:checked + span:after {content: " ausgewählt"}
+input:disabled { outline: 1px solid lightgray;}
+input:enabled  { outline: 1px solid #0073C8;}
+input:checked  { outline: 2px solid #0073C8;}
+
