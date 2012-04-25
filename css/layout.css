@@ -1,5 +1,5 @@
 /* 
-    Document   : global
+    Document   : layout.css
     Created on : 17.04.2012, 10:05:18
     Author     : Alex Buchner
     Description:
@@ -8,6 +8,13 @@
 
 root { 
     display: block;
+}
+.contentWrap{
+    background-color: #EFEFEF;
+    position: absolute;	/*Position auf absolute Position setzen*/
+    width: 800px; /*Breite des Inhaltsbereichs angeben*/
+    left: 50%; /*Nun den Abstand vom linken Bildschirmrand auf 50% setzen*/
+    margin-left: -400px; /*Und nun wieder um die Halbe Inhaltsbreite zurück schieben*/
 }
 
 h2 {
@@ -19,12 +26,16 @@ h2 {
     -webkit-margin-end: 0px;
     font-weight: bold;
 }
+
+header{
+    padding: 10px;
+}
 header h2 {
     font-size: 3em;
     color: #454545;
     text-transform: uppercase;
     letter-spacing: -2px;
-    margin: 1em 0 5px 0;
+    margin: 0.5em 0 5px 0;
     padding: 0;
     line-height: 1;
 }
@@ -48,6 +59,17 @@ header h3 {
     color: #777;
     font-weight: normal;
 }
+.content {
+ padding-left: 10px;
+}
+
+footer {
+    background: #2E333E;
+    color: white;
+    height: 90px;
+    padding: 10px;
+    font-size: 14px;
+}
 footer h3{
     font-size: 1em;
     margin: 0;
@@ -69,20 +91,17 @@ p{
     -webkit-margin-start: 0px;
     -webkit-margin-end: 0px;
 }
-p.footer{
-    color:white;
-    line-height: 1.1em;
-    margin-top:0em;
 
+#ContactFooter{
+    float: left;
+    margin-left: 80px;
+    margin-top: 10px;
 }
-
-footer {
-    background: #2E333E;
-    color: white;
-    height: auto;
-    padding: 10px;
+#AdressFooter{
+    float: left;
+    margin-top: 10px;
 }
-footer.left{
+left{
     float: left;    
 }
 
