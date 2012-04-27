@@ -175,31 +175,6 @@ function createCalc(){
     stylesheet.media="all";
     document.lastChild.firstChild.appendChild(stylesheet);
     document.write("<div id=\"SwimCalc\"><\/div>");
-    var container=document.getElementById('SwimCalc');
-    var form="<!--[if gte IE 9]>\n\
-        <style type=\"text\/css\">.button, .green, .neutral {filter: none;}<\/style>\n\<![endif]-->"+"<h1>Temporechner</h1>"
-        +"<form name=\"calcform\">"+"<label for=\"distance\">Strecke (km,m):<\/label>"
-        +"<div class=\"right\">"+"<input type=\"text\" name=\"distance\" id=\"distance\" placeholder=\"km,m\" onKeyup=\"javascript:checkInput()\" \/>"
-        +"<\/div>\n\"\n\"+"<div id=\"time\">"+"<label for=\"timehh\">Zeit f&uuml;r Strecke (hh\/mm\/ss):<\/label>"+"<div class=\"right\">"
-        +"<input type=\"text\" name=\"timehh\" id=\"timehh\" placeholder=\"hh\" onKeyup=\"javascript:checkInput()\" \/>"
-        +"<input type=\"text\" name=\"timemm\" id=\"timemm\" placeholder=\"mm\" onKeyup=\"javascript:checkInput()\" \/>"
-        +"<input type=\"text\" name=\"timess\" id=\"timess\" placeholder=\"ss\" onKeyup=\"javascript:checkInput()\" \/>"
-        +"<\/div><\/div>"+"<div id=\"timekm\">"+"<label for=\"timekm_mm\">Zeit pro Kilometer (mm\/ss):<\/label>"+"<div class=\"right\">"
-        +"<input type=\"text\" name=\"timekm_mm\" id=\"timekm_mm\" placeholder=\"mm\" onKeyup=\"javascript:checkInput()\" \/>"
-        +"<input type=\"text\" name=\"timekm_ss\" id=\"timekm_ss\" placeholder=\"ss\" onKeyup=\"javascript:checkInput()\" \/>"
-        +"<\/div><\/div>"+"<label for=\"tempo\">Geschwindigkeit (km\/h):<\/label>"+"<div class=\"right\">"
-        +"<input type=\"text\" name=\"tempo\" id=\"tempo\" placeholder=\"km\/h\" onKeyup=\"javascript:checkInput()\" \/>"+"<\/div>"
-        +"<div id=\"buttons\">"+"<div id=\"calc\" class=\"button neutral\" onclick=\"javascript:calculateAll()\">berechnen<\/div>"
-        +"<div class=\"button neutral\" onclick=\"avascript:document.calcform.reset();checkInput()\">löschen<\/div>"
-        +"<div class=\"button neutral\" onclick=\"javascript:showHelp()\">anleitung<\/div><\/div>"+"<\/form>"
-        +"<p>Programmiert von <a href=\"http:\/\/www.triathlon-tipps.de\" target=\"_blank\">Triathlon-Tipps.de<\/a><\/p>"
-        +"<div id=\"Help\">"+"<h2>Anleitung Temporechner<\/h2>"+"<p>Erlaubte Eingabe-Kombinationen:</p>"+"<ul>"
-        +"<li>Eingabe: Strecke & Zeit; Ergebnis: Geschwindigkeit& Zeit pro Kilometer<\/li>"
-        +"<li>Eingabe: Strecke & Tempo; Ergebnis: Zeit & Zeit pro Kilometer<\/li>"
-        +"<li>Eingabe: Strecke & Zeit pro Kilometer; Ergebnis: Zeit & Geschwindigkeit<\/li>"
-        +"<li>Eingabe: Geschwindigkeit; <br \/>Ergebnis: Zeit pro Kilometer<\/li>"
-        +"<li>Eingabe: Zeit pro Kilometer; <br \/>Ergebnis: Geschwindigkeit<\/li>"+"<\/ul>"
-        +"<p>Bei gültigen Eingaben färbt sich der Button \"berechnen\" grün. Um eine neue Berechnung durchzuführen, drücken Sie zuerst \"löschen\".<br \/></p>"
-        +"<div class=\"button neutral\" onclick=\"javascript:closeHelp()\">anleitung schließen<\/div>"+"<\/div>";
-    document.getElementById('SwimCalc').innerHTML=form;
+    var container=document.getElementById('calc');
+    document.getElementById('calc').innerHTML=form;
 }
