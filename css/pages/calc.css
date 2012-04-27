@@ -1,0 +1,57 @@
+/* 
+    Document   : SwimCalc
+    Created on : 25.04.2012, 14:35:24
+    Author     : Alexander Buchner
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+#SwimCalc{
+    border: 3px solid gray;
+    border-radius: 5px;
+    width: 400px;
+    margin: 5px;
+    padding: 5px;
+    background-color: lightblue;
+    float: left;
+}
+#BikeCalc{
+    border: 3px solid gray;
+    border-radius: 5px;
+    width: 400px;
+    margin: 5px;
+    padding: 5px;
+    background-color: darkseagreen;
+    float: left;
+}
+#RunCalc{
+    border: 3px solid gray;
+    border-radius: 5px;
+    width: 400px;
+    margin: 5px;
+    padding: 5px;
+    background-color: lightsalmon;
+    float: left;
+}
+
+div.button{
+    margin: 2px 2px 3px 2px;
+    line-height:40px;
+    width: 274px;
+    height: 40px;
+    color: #000000;
+    background-color:white;
+    font-size:16px;
+    font-weight:bold;
+    text-align:center;
+    -moz-border-radius: .3em;
+    border-radius: .3em;
+
+}
+div.button:hover {
+    cursor: pointer;
+}
