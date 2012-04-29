@@ -43,3 +43,10 @@ root {
     border-right:5px solid blue;
 }
 /*--------------------------Definition der Dreiecke--------------------------*/
+
+/***************************Definition der VarBoxes***************************/
+#VarBoxes{
+   border: 2px solid darkred;
+   height: max-content;
+}
+/*--------------------------Definition der VarBoxes--------------------------*/
