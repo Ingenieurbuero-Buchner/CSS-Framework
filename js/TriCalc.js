@@ -171,10 +171,10 @@ function createCalc(){
     stylesheet=document.createElement("link");
     stylesheet.rel="stylesheet";
     stylesheet.type="text/css";
-    stylesheet.href="widgets\/SwimCalc.css";
+    stylesheet.href="widgets\/calc.css";
     stylesheet.media="all";
     document.lastChild.firstChild.appendChild(stylesheet);
-    document.write("<div id=\"SwimCalc\"><\/div>");
+    document.write("<div id=\"calc\"><\/div>");
     var container=document.getElementById('calc');
     document.getElementById('calc').innerHTML=form;
 }
