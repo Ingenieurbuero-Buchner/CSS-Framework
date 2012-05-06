@@ -7,46 +7,56 @@
 */
 
 root { 
-    display: block;
+   display: block;
 }
 
 /***************************Definition der Dreiecke***************************/
 .arrow-up {
-    width: 0;
-    height: 0;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-bottom: 5px solid black;
+   width: 0;
+   height: 0;
+   border-left: 5px solid transparent;
+   border-right: 5px solid transparent;
+   border-bottom: 5px solid black;
 }
 
 .arrow-down {
-    width: 0;
-    height: 0;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-top: 5px solid #f00;
+   width: 0;
+   height: 0;
+   border-left: 5px solid transparent;
+   border-right: 5px solid transparent;
+   border-top: 5px solid #f00;
 }
 
 .arrow-right {
-    width: 0;
-    height: 0;
-    border-top: 5px solid transparent;
-    border-bottom: 5px solid transparent;
-    border-left: 5px solid green;
+   width: 0;
+   height: 0;
+   border-top: 5px solid transparent;
+   border-bottom: 5px solid transparent;
+   border-left: 5px solid green;
 }
 
 .arrow-left {
-    width: 0;
-    height: 0;
-    border-top: 5px solid transparent;
-    border-bottom: 5px solid transparent;
-    border-right:5px solid blue;
+   width: 0;
+   height: 0;
+   border-top: 5px solid transparent;
+   border-bottom: 5px solid transparent;
+   border-right:5px solid blue;
 }
 /*--------------------------Definition der Dreiecke--------------------------*/
 
 /***************************Definition der VarBoxes***************************/
+
+html, body { 
+   background-color: #333333;
+   margin: 0;
+   padding: 0;
+   height: 100%; /* WICHTIG!!! STRECKT ANZEIGENBEREICH AUF 100% */
+}
+
 #VarBoxes{
+   margin: 20px;
+   padding: 20px;
    border: 2px solid darkred;
-   height: max-content;
+   height: 95%;
 }
 /*--------------------------Definition der VarBoxes--------------------------*/
