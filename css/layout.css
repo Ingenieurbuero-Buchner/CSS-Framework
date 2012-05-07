@@ -15,6 +15,7 @@ root {
     width: 800px; /*Breite des Inhaltsbereichs angeben*/
     left: 50%; /*Nun den Abstand vom linken Bildschirmrand auf 50% setzen*/
     margin-left: -400px; /*Und nun wieder um die Halbe Inhaltsbreite zurück schieben*/
+    min-height: 700px;
 }
 
 h2 {
@@ -60,7 +61,7 @@ header h3 {
     font-weight: normal;
 }
 .content {
- padding-left: 10px;
+    padding-left: 10px;
 }
 
 footer {
@@ -69,6 +70,9 @@ footer {
     height: 90px;
     padding: 10px;
     font-size: 14px;
+    bottom: 0px;
+    position: absolute;
+    width: 780px;
 }
 footer h3{
     font-size: 1em;
@@ -84,12 +88,12 @@ p{
     color:#444;
     display: block;
     font-size: 1em;
-    line-height: 2em;
-    margin: 1em 0 1em 0;
+    line-height: 1.2em;
+    margin: 1em 1em 1em 1em;
     -webkit-margin-before: 1em;
     -webkit-margin-after: 1em;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
+    -webkit-margin-start: 1em;
+    -webkit-margin-end: 1em;
 }
 
 #ContactFooter{
