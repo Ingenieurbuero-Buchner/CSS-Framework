@@ -1,0 +1,129 @@
+<!--
+    Document   : positioning
+    Created on : 03.05.2012, 15:35:41
+    Author     : Alexander Buchner
+    Description:
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="../../css/layout.css">
+    </head>
+    <body>
+        <div class="contentWrap">
+            <header id="PageHeader">
+                <h2>Framework</h2>
+                <h3>mein eigenes</h3>
+            </header>
+            <h1>Positonierung von DIV-Container</h1>
+            Auf dieser Seite werden die verschiedenen Eigenschaften zur
+            Positionierung von Elementen erklärt, die in CSS verfügbar sind.
+            <ul>
+                <li class="codeText">position: static</li>
+                <li class="codeText">position: relative</li>
+                <li class="codeText">position: absolute</li>
+                <li class="codeText">float</li>
+            </ul>
+            <h2>position: static</h2>
+            <p>
+                Standardmäßig ist für alle Elemente die Eigenschaft
+                <span class="codeText">position</span> mit dem Wert
+                <span class="codeText">static</span> belegt. Dies bedeutet,
+                dass die Elemente nicht positioniert werden und da
+                erscheinen wo sie normalerweise (laut Reihenfolge im
+                Quelcode) erscheinen würden. Diese Eigenschaft wird nur
+                angegeben, wenn die zuvor angegebene Eigenschaft außer Kraft
+                gesetzt werden soll.
+            </p>
+            <pre class="codeText">
+                #div-1{
+                   <span class="highlightText">position:</span> static;
+                }
+            </pre>
+            <h2>position: relative</h2>
+            <p>
+                Wenn <span class="codeText">position: relative</span>, dann
+                können auch die Eigenschaften <span class="codeText">top</span>
+                or <span class="codeText">bottom</span> und
+                <span class="codeText">left</span> or <span class="codeText">
+                    right</span> genutzt werden. Hiermit werden die Elemente
+                relativ zu der Position, an der sie normalerweise (laut
+                Reihenfolge im Quellcode) angeordnet sind positioniert.
+            </p>
+            <pre class="codeText">
+                #div-1 {
+                   <span class="highlightText">position: </span>relative;
+                   <span class="highlightText">top: </span>20px;
+                   <span class="highlightText">left: </span>-40px;
+                }
+            </pre>
+            <p>
+                <span class="highlightText">Anmerkung:</span>
+                Der Platz den <span class="codeText">div-1</span> vor der
+                Verschiebung belegt hat, ist jetzt ein leerer Platz. Andere
+                Elemente werden durch die Verschiebung nicht beeinflußt.
+            </p>
+            <h2>position: absolut</h2>
+            <p>
+                Wird ein Element mit <span class="codeText">position: absolute
+                </span> deklariert, dann wird es von der Seite entfernt und
+                genau auf die angegebene Position gesetzt.
+            </p>
+            <pre class="codeText">
+                #div-1a {
+                    <span class="highlightText">position:</span> absolute;
+                    <span class="highlightText">top:</span> 0;
+                    <span class="highlightText">right:</span> 0;
+                    <span class="highlightText">width:</span> 200px;
+                }
+            </pre>
+            <p>
+                <span class="highlightText">Anmerkung:</span>
+                Ab dem Zeitpunkt andem <span class="codeText">#div-1a</span> von
+                der Seite entfernt wurde, werden alle anderen Elemente den
+                frei gewordenen Platz belegen, sprich sie werden nachrücken.
+            </p>
+            <h2>position: relative + position:absolute</h2>
+            <p>
+                Wenn ein übergeordnetes Element auf <span class="codeText">
+                    position: relativ</span> gesetzt ist, dann werden alle
+                Elemente innerhalb des untergeordneten <span class="codeText">div</span>-
+                Containers, die auf <span class="codeText">position: 
+                    absolute</span> gesetzt sind, relativ zu diesem übergeordneten
+                Container positioniert.
+            </p>
+            <pre class="codeText">
+               #div-1 {
+                   <span class="highlightText">position:</span> relative;
+               }
+               #div-1a {
+                   <span class="highlightText">position:</span> absolute;
+                   <span class="highlightText">top:</span> 0;
+                   <span class="highlightText">right:</span> 0;
+                   <span class="highlightText">width:</span> 200px;
+               }
+            </pre>
+            <h2>two column absolute</h2>
+            <h2>two column absolute height</h2>
+            <h2>float</h2>
+            <h2>float columns</h2>
+            <h2>float columns with clear</h2>            
+
+            <footer id="PageFooter">
+                <h3>Ingenieurbüro Buchner</h3><br>
+                <div id="AdressFooter">
+                    Alexander Buchner<br>
+                    Listerstr. 5<br>
+                    80997 München<br>
+                </div>
+                <div id="ContactFooter">
+                    0179-7053712<br>
+                    alex@ingenieurbuero-buchner.de<br>
+                    www.ingenieurbuero-buchner.de
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
