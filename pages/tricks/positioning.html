@@ -40,8 +40,7 @@
             <pre class="codeText">
                 #div-1{
                    <span class="highlightText">position:</span> static;
-                }
-            </pre>
+                }</pre>
             <h2>position: relative</h2>
             <p>
                 Wenn <span class="codeText">position: relative</span>, dann
@@ -57,8 +56,7 @@
                    <span class="highlightText">position: </span>relative;
                    <span class="highlightText">top: </span>20px;
                    <span class="highlightText">left: </span>-40px;
-                }
-            </pre>
+                }</pre>
             <p>
                 <span class="highlightText">Anmerkung:</span>
                 Der Platz den <span class="codeText">div-1</span> vor der
@@ -77,8 +75,7 @@
                     <span class="highlightText">top:</span> 0;
                     <span class="highlightText">right:</span> 0;
                     <span class="highlightText">width:</span> 200px;
-                }
-            </pre>
+                }</pre>
             <p>
                 <span class="highlightText">Anmerkung:</span>
                 Ab dem Zeitpunkt andem <span class="codeText">#div-1a</span> von
@@ -103,10 +100,43 @@
                    <span class="highlightText">top:</span> 0;
                    <span class="highlightText">right:</span> 0;
                    <span class="highlightText">width:</span> 200px;
-               }
-            </pre>
+               }</pre>
             <h2>two column absolute</h2>
+            <p>
+                Damit kann man bereits ein Layout mit zwei Spalten generieren.
+            </p>
+            <pre class="codeText">
+                #div-1 {
+                    <span class="highlightText">position:</span> relative;
+                }
+                #div-1a {
+                    <span class="highlightText">position:</span> absolute;
+                    <span class="highlightText">top:</span> 0;
+                    <span class="highlightText">right:</span> 0;
+                    <span class="highlightText">width:</span> 200px;
+                }
+                #div-1b {
+                    <span class="highlightText">position:</span> absolute;
+                    <span class="highlightText">top:</span> 0;
+                    <span class="highlightText">left:</span> 0;
+                    <span class="highlightText">width:</span> 200px;
+                }</pre>
+            <p>
+                Ein weiterer Vorteil der absoluten Positionierung ist, dass die
+                Elemente in beliebiger Reihenfolge im HTML-Code beschrieben
+                werden können. Dies hat keinen Einfluß auf die Postionierung auf
+                der fertigen Seite.
+            </p>
             <h2>two column absolute height</h2>
+            <p>
+                Dies ist keine so gute Lösung. Da wir gewöhnlich nicht wissen,
+                wieviel Text in einer Spalte unterkommen soll.
+            </p>
+            <pre class="codeText">
+            #div-1 {
+                <span class="highlightText">position:</span> relative;
+                <span class="highlightText">height:</span> 250px;
+            }</pre>
             <h2>float</h2>
             <h2>float columns</h2>
             <h2>float columns with clear</h2>            
