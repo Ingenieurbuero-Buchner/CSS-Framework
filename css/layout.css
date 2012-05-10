@@ -34,13 +34,16 @@ h2 {
 header{
     padding: 10px;
     position: fixed;
+    background-color: #5bac26;
+    z-index: 100;
+    width: 780px;
 }
 header h2 {
     font-size: 3em;
     color: #454545;
     text-transform: uppercase;
     letter-spacing: -2px;
-    margin: 0.5em 0 5px 0;
+    margin: 0px 0 5px 0;
     padding: 0;
     line-height: 1;
 }
@@ -64,7 +67,7 @@ header h3 {
     color: #777;
     font-weight: normal;
 }
-.content {
+#Content {
     padding-left: 10px;
     margin-top: 130px;
 }
@@ -72,7 +75,7 @@ header h3 {
 footer {
     background: #2E333E;
     color: white;
-    height: 90px;
+    height: 70px;
     padding: 10px;
     font-size: 14px;
     bottom: 0px;
@@ -81,11 +84,11 @@ footer {
 }
 footer h3{
     font-size: 1em;
-    margin: 0;
-    padding: 0;
+    margin: 0px 0px 5px 0px;
+    padding: 0px;
     text-transform: uppercase;
     letter-spacing: -1px;
-    line-height: 1;
+    line-height: 1em;
     color: #777;
     font-weight: normal;
 }
@@ -104,11 +107,9 @@ p{
 #ContactFooter{
     float: left;
     margin-left: 80px;
-    margin-top: 10px;
 }
 #AdressFooter{
     float: left;
-    margin-top: 10px;
 }
 left{
     float: left;    

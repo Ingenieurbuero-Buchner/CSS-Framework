@@ -1,0 +1,23 @@
+/* 
+    Document   : tests
+    Created on : 10.05.2012, 10:18:58
+    Author     : Alexander Buchner
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+.blindTable{
+    border: 1px;
+    border-spacing: 4px;
+    padding: 0px;
+}
+.input{
+    background-color: lightblue;
+}
+.inputVorname{
+    background-color: lightgreen;
+}

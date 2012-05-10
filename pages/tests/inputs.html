@@ -1,0 +1,128 @@
+<!--
+    Document   : inputs
+    Created on : 10.05.2012, 10:34:50
+    Author     : Alexander Buchner
+    Description:
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="../../css/layout.css" media="all">
+        <link rel="stylesheet" type="text/css" href="../../css/pages/tests.css" media="all">
+    </head>
+    <div class="contentWrap">
+        <header id="PageHeader">
+            <h2>Framework</h2>
+            <h3>mein eigenes</h3>
+        </header>
+        <div id="Content">
+            <h1>Viele Eingabefelder sinnvoll formatieren</h1>
+            <p>
+                Auf dieser Seite wird erklärt, wie man mittels CSS einfach
+                viele verschiedene Eingeabefelder sinnvoll formatiert.
+            </p>
+            <form action="test.php">
+                <table class="blindTable">
+                    <tr>
+                        <td class="textInput textVorname">
+                            Vorname:
+                        </td>
+                        <td>
+                            <input class="input inputVorname" name="vorname"
+                                   type="text" maxlength="25"
+                                   placeholder="Vorname">
+                        </td>
+                        <td><br /></td>
+                        <td class="textInput textNachname">
+                            Nachname:
+                        </td>
+                        <td>
+                            <input class="input inputNachname" name="nachname"
+                                   type="text" size="30" maxlength="30"
+                                   placeholder="Nachname">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="textInput textStrasse">
+                            Straße:
+                        </td>
+                        <td>
+                            <input class="input inputStrasse" name="strasse"
+                                   type="text" size="30" maxlength="35"
+                                   placeholder="Straße">
+                        </td>
+                        <td><br /></td>
+                        <td class="textInput textHausNummer">
+                            Nr.:
+                        </td>
+                        <td>
+                            <input class="input inputHausNummer" name="hausnummer"
+                                   type="text" size="5" maxlength="5"
+                                   placeholder="Nr.">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="textInput textPlz">
+                            PLZ:
+                        </td>
+                        <td>
+                            <input class="input inputPlz" name="plz" type="text"
+                                   size="5" maxlength="5"
+                                   placeholder="PLZ">
+                        </td>
+                        <td><br /></td>
+                        <td class="textInput textStadt">
+                            Stadt:
+                        </td>
+                        <td>
+                            <input class="input inputStadt" name="stadt"
+                                   type="text" size="5" maxlength="5"
+                                   placeholder="Stadt">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="textInput textTel">
+                            Telefonnummer:
+                        </td>
+                        <td>
+                            <input class="input inputTel" name="telefon"
+                                   type="text" size="20" maxlength="35"
+                                   placeholder="Tel">
+                        </td>
+                        <td><br /></td>
+                        <td><br /></td>
+                        <td><br /></td>
+                    </tr>
+                    <tr>
+                        <td class="textInput textEmail">
+                            Email:
+                        </td>
+                        <td>
+                            <input class="input inputEmail" name="email"
+                                   type="text" size="30" maxlength="35"
+                                   placeholder="kontakt@email.de">
+                        </td>
+                        <td><br /></td>
+                        <td><br /></td>
+                        <td><br /></td>
+                    </tr>
+                </table> <!-- ENDE .blindTable -->
+            </form>
+        </div> <!-- ENDE #Content -->
+        <footer id="PageFooter">
+            <h3>Ingenieurbüro Buchner</h3>
+            <div id="AdressFooter">
+                Alexander Buchner<br />
+                Listerstr. 5<br />
+                80997 München
+            </div> <!-- ENDE #AdressFooter -->
+            <div id="ContactFooter">
+                0179-7053712<br />
+                alex@ingenieurbuero-buchner.de<br />
+                www.ingenieurbuero-buchner.de
+            </div> <!-- ENDE #ContactFooter -->
+        </footer>
+    </div>
+</html>
